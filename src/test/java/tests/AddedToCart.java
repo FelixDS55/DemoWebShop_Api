@@ -33,6 +33,6 @@ public class AddedToCart {
                 .statusCode(200)
                 .log().all()
                 .body("success", is(true))
-                .body("message", is("The product has been added to your <a href=\\\"/cart\\\">shopping cart</a>"));
+                .body("message", is("The product has been added to your <a href=\"/cart\">shopping cart</a>"));
     }
 }
